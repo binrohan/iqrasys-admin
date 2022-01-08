@@ -9,9 +9,6 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 const config = {
   entry: {
     index: './src/ts/index.ts',
-    header: './src/ts/components/ui/headline/component.ts',
-    router: './bee_hive/Q_router/engine.ts',
-    bootstrap: './bee_hive/Q_bootstrap/bootstrap.ts'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

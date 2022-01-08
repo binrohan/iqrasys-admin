@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iqrasys Solution Ltd</title>
+  </head>
+  <body class="bg-zinc-800 text-slate-300">
+    <!-- Top Navigation -->
+    <header
+      class="px-3 py-2 flex bg-zinc-900 border-b min-w-full border-zinc-700 fixed"
+    >
+      <div class="text-orange-500 font-bold w-[200px]">
+        <a href="#">Iqrasys Solution Ltd</a>
+      </div>
+      <div class="flex-1 flex gap-2 justify-end">
+        <img id="user-icon" alt="user icon" width="25" />
+        <p class="text-slate-300 font-semibold">Rohan Bin Khokon</p>
+      </div>
+    </header>
+
+    <main class="flex min-h-screen pt-[42px]">
+      <!-- Side drawer -->
+      <aside class="min-w-[200px] bg-zinc-900 border-r border-zinc-700">
+        <ul class="text-slate-300 text-sm py-4">
+          <li class="px-4 py-2 bg-orange-500 cursor-pointer route-link" data-link="/">
+            Dashboard
+          </li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link" data-link="/user-management">
+            User Management
+          </li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">Message</li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
+            Demo Requests
+          </li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">Quick Demo</li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
+            Job Applications
+          </li>
+          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
+            Solutions
+          </li>
+        </ul>
+      </aside>
+
+      <div id="app-root" class="p-4">
+        <!-- <div class="flex-1">
+          <h1
+            class="text-xl font-semibold text-slate-300 cursor-default border-b border-zinc-700 pb-4 pt-1 px-4 mb-4"
+          >
+            Dashboard
+          </h1>
+          <div class="flex md:flex-row">
+            <div class="flex-1 p-2">
+              <div
+                class="p-4 bg-zinc-700 rounded drop-shadow-md hover:drop-shadow-xl text-slate-300"
+              >
+                <h2 class="text-lg font-semibold mb-6">New Message</h2>
+                <div class="flex justify-between mb-2">
+                  <h3 class="font-semibold">Eyasin Arafat</h3>
+                  <span class="text-sm">25 Feb 2022 4.30AM</span>
+                </div>
+                <p class="text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quis, ullam fugiat, quo quas, repellat cupiditate odit
+                  repellendus iusto aliquid error incidunt? Quasi rerum
+                  molestias dolores.
+                </p>
+                <button
+                  class="px-2 py-1 bg-zinc-600 rounded-sm hover:bg-zinc-500 active:bg-zinc-700 active:drop-shadow-lg"
+                >
+                  View all message
+                </button>
+              </div>
+            </div>
+            <div class="w-[320px] p-2">
+              <div
+                class="p-4 bg-zinc-700 rounded drop-shadow-md text-slate-300"
+              >
+                <div class="flex justify-between mb-6">
+                  <h2 class="text-lg font-semibold">Site Stats</h2>
+                  <select
+                    name="range"
+                    id="range"
+                    class="bg-zinc-500 h-10 rounded-sm"
+                  >
+                    <option value="1" selected>Today</option>
+                    <option value="7" selected>7 days</option>
+                    <option value="30" selected>1 month</option>
+                    <option value="365" selected>1 year</option>
+                  </select>
+                </div>
+                <div
+                  class="text-sm flex justify-between py-2 border-b border-zinc-600"
+                >
+                  <p class="">Page viewed</p>
+                  <p>69</p>
+                </div>
+                <div
+                  class="text-sm flex justify-between py-2 border-b border-zinc-600"
+                >
+                  <p class="">Messages</p>
+                  <p>69</p>
+                </div>
+                <div class="text-sm flex justify-between py-2">
+                  <p class="">Request Demo</p>
+                  <p>69</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+  </body>
+</html>

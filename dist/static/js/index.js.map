@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/index.js","mappings":"mBACAA,QAAQC,IAAI,a","sources":["webpack://boilerplate/./src/ts/index.ts"],"sourcesContent":["import '../css/index.css';\r\nconsole.log('index.ts');\r\n"],"names":["console","log"],"sourceRoot":""}

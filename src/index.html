@@ -12,7 +12,7 @@
       class="px-3 py-2 flex bg-zinc-900 border-b min-w-full border-zinc-700 fixed"
     >
       <div class="text-orange-500 font-bold w-[200px]">
-        <a href="#">Iqrasys Solution Ltd</a>
+        <a href="./index.html">Iqrasys Solution Ltd</a>
       </div>
       <div class="flex-1 flex gap-2 justify-end">
         <img id="user-icon" alt="user icon" width="25" />
@@ -24,28 +24,53 @@
       <!-- Side drawer -->
       <aside class="min-w-[200px] bg-zinc-900 border-r border-zinc-700">
         <ul class="text-slate-300 text-sm py-4">
-          <li class="px-4 py-2 bg-orange-500 cursor-pointer route-link" data-link="/">
-            Dashboard
+          <li
+            class="px-4 py-2 bg-orange-500 cursor-pointer route-link"
+            data-link="/"
+          >
+            <a href="./index.html" class="block">Dashboard</a>
           </li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link" data-link="/user-management">
-            User Management
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/user-management"
+          >
+            <a href="./user-management.html" class="bold">User Management</a>
           </li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">Message</li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
-            Demo Requests
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/messages"
+          >
+            <a href="./messages.html">Message</a>
           </li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">Quick Demo</li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
-            Job Applications
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/demo-requests"
+          >
+            <a href="./demo-requests.html">Demo Requests</a>
           </li>
-          <li class="px-4 py-2 hover:bg-zinc-800 cursor-pointer">
-            Solutions
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/quick-requests"
+          >
+            <a href="./quick-demo">Quick Demo</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/job-applications"
+          >
+            <a href="./job-applications">Job Applications</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/solutions"
+          >
+            <a href="./solutions">Solutions</a>
           </li>
         </ul>
       </aside>
 
-      <div id="app-root" class="p-4">
-        <!-- <div class="flex-1">
+      <div id="app-root" class="p-4 flex-1">
+        <div>
           <h1
             class="text-xl font-semibold text-slate-300 cursor-default border-b border-zinc-700 pb-4 pt-1 px-4 mb-4"
           >
@@ -110,7 +135,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </main>
   </body>

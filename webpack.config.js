@@ -9,6 +9,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 const config = {
   entry: {
     index: './src/ts/index.ts',
+    login: './src/ts/login.ts',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -22,9 +23,22 @@ const config = {
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Boilerplate',
+      title: 'dashboard',
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html'),
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'user management',
+      filename: 'user-management.html',
+      template: path.resolve(__dirname, 'src/user-management.html'),
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'login',
+      filename: 'login.html',
+      template: path.resolve(__dirname, 'src/login.html'),
+      chunks: ['login']
     }),
     new MiniCssExtractPlugin({
       filename: 'static/css/[name].css',
@@ -56,7 +70,7 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: 'static/images/[name].[ext]',
         },
       },
       {

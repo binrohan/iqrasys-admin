@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iqrasys Solution Ltd</title>
+  </head>
+  <body class="bg-zinc-800 text-slate-300">
+    <!-- Top Navigation -->
+    <header
+      class="px-3 py-2 flex bg-zinc-900 border-b min-w-full border-zinc-700 fixed"
+    >
+      <div class="text-orange-500 font-bold w-[200px]">
+        <a href="#">Iqrasys Solution Ltd</a>
+      </div>
+      <div class="flex-1 flex gap-2 justify-end">
+        <img id="user-icon" alt="user icon" width="25" />
+        <p class="text-slate-300 font-semibold">Rohan Bin Khokon</p>
+      </div>
+    </header>
+
+    <main class="flex min-h-screen pt-[42px]">
+      <!-- Side drawer -->
+      <aside class="min-w-[200px] bg-zinc-900 border-r border-zinc-700">
+        <ul class="text-slate-300 text-sm py-4">
+          <li
+            class="px-4 py-2 bg-orange-500 cursor-pointer route-link"
+            data-link="/"
+          >
+            <a href="./index.html" class="block">Dashboard</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/user-management"
+          >
+            <a href="./user-management.html" class="bold">User Management</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/messages"
+          >
+            <a href="./messages.html">Message</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/demo-requests"
+          >
+            <a href="./demo-requests.html">Demo Requests</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/quick-requests"
+          >
+            <a href="./quick-demo">Quick Demo</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/job-applications"
+          >
+            <a href="./job-applications">Job Applications</a>
+          </li>
+          <li
+            class="px-4 py-2 hover:bg-zinc-800 cursor-pointer route-link"
+            data-link="/solutions"
+          >
+            <a href="./solutions">Solutions</a>
+          </li>
+        </ul>
+      </aside>
+
+      <div id="app-root" class="p-4 flex-1">
+        <div>
+            <h1
+              class="text-xl font-semibold text-slate-300 cursor-default border-b border-zinc-700 pb-4 pt-1 px-4 mb-4 block"
+            >
+              User Management
+            </h1>
+            <div class="p-4">
+              <ul class="flex gap-2 mb-2">
+                <li class="px-2 py-1  rounded-sm cursor-pointer bg-zinc-900 text-sm">Active</li>
+                <li class="px-2 py-1 hover:bg-zinc-500 rounded-sm cursor-pointer text-sm" id="text">Inactive</li>
+              </ul>
+              <div class="flex mb-2">
+                <input type="text" name="search" id="search"  class="text-sm flex-1 text-slate-300 bg-zinc-600" placeholder="search"/>
+              </div>
+              <table class="min-w-full text-sm">
+                <thead class="border-b border-zinc-700">
+                  <tr>
+                    <th class="font-normal pb-2"></th>
+                    <th class="font-normal pb-2">Name</th>
+                    <th class="font-normal pb-2">Phone</th>
+                    <th class="font-normal pb-2">Email</th>
+                    <th class="font-normal pb-2">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-zinc-700 last:border-none">
+                    <th class="font-normal px-1 py-2">1</th>
+                    <th class="font-normal px-1 py-2">Rohan Bin Khokon</th>
+                    <th class="font-normal px-1 py-2">01777547348</th>
+                    <th class="font-normal px-1 py-2">binrohan.cs@gmail.com</th>
+                    <th class="font-normal px-1 py-2">
+                        <button class="rounded-sm bg-zinc-700 hover:bg-red-600 active:bg-red-700 active:shadow-sm border-none p-0.5 px-2">Delete</button>
+                    </th>
+                  </tr>
+                  <tr class="border-b border-zinc-700 last:border-none">
+                    <th class="font-normal px-1 py-2">2</th>
+                    <th class="font-normal px-1 py-2">Rahat Khokon Deep</th>
+                    <th class="font-normal px-1 py-2">01553501368</th>
+                    <th class="font-normal px-1 py-2">binrohan97@gmail.com</th>
+                    <th class="font-normal px-1 py-2">
+                        <button class="rounded-sm bg-zinc-700 hover:bg-red-600 active:bg-red-700 active:shadow-sm border-none p-0.5 px-2">Delete</button>
+                    </th>
+                  </tr>
+                  <tr class="border-b border-zinc-700 last:border-none">
+                    <th class="font-normal px-1 py-2">2</th>
+                    <th class="font-normal px-1 py-2">Rahat Khokon Deep</th>
+                    <th class="font-normal px-1 py-2">01553501368</th>
+                    <th class="font-normal px-1 py-2">binrohan97@gmail.com</th>
+                    <th class="font-normal px-1 py-2">
+                        <button class="rounded-sm bg-zinc-700 hover:bg-red-600 active:bg-red-700 active:shadow-sm border-none p-0.5 px-2">Delete</button>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+      </div>
+    </main>
+  </body>
+</html>
